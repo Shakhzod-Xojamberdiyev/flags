@@ -1,0 +1,52 @@
+/* SITE HEADER */
+.dark{
+    --main-text-color: #fff;
+    --main-bg-color: #202C36;
+    --main-header-color:#2B3844;
+}
+.site-header{
+    background-color: var(--main-header-color);
+}
+.site-header-inner{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.logo{
+    
+}
+.logo-black{
+    display: none;
+}
+.logo-white{
+    
+}
+.dark .logo-black{
+    display: block;
+}
+.dark .logo-white{
+    display: none;
+}
+.site-header-btn{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-text-color);
+    background-color: transparent;
+    border: none;
+
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 14px;
+        margin-right: 7px;
+        background-image: url("../images/month.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.dark .site-header-btn::before{
+    background-image: url("../images/moon.svg");
+}

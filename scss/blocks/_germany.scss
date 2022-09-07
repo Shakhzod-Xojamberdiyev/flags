@@ -1,0 +1,96 @@
+/*GERMANY*/
+.germany{
+    
+}
+.back{
+    margin-top: 46px;
+    display: inline-block;
+    padding: 6px 23px 6px 30px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    background-color: var(--main-header-color);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+    border-radius: 2px;
+    
+    &::before{
+        content: "";
+        margin-right: 8px;
+        display: inline-block;
+        background-image:url("../images/arrow.svg");
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 12px;
+    }
+}
+.dark .back::before{
+    background-image:url("../images/arrow-white.svg");
+}
+
+.flag-inner{
+    padding-top: 70px;
+}
+.germany-flag{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 559px;
+    height: auto;
+}
+.flag-text-box{
+    padding-top: 45px;
+}
+.flag-country{
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--main-text-color);
+}
+.flag-about-first{
+    width: 100%;
+    max-width: 600px;
+}
+.country-about{
+    
+}
+.country-desc{
+    padding-top: 13px;
+    color: var(--main-text-color);
+}
+.country-arge{
+    
+}
+.country-end{
+    padding-top: 35px;
+}
+.country-title{
+    color: var(--main-text-color);
+}
+.coun__list{
+    padding-top: 16px;
+}
+.coun-item{
+    &:nth-child(2){
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+.coun-link{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    width: 96px;
+    padding: 6px 0px;
+    text-align: center;
+    display: inline-block;
+    color: var(--main-text-color);
+    text-decoration: none;
+    background-color: var(--main-header-color);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+    border-radius: 2px;
+}
+
+@include mobile-first(576px){
+    .coun__list{
+        padding-top: 0;
+        padding-left: 15px;
+    }
+}
